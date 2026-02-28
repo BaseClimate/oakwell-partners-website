@@ -72,7 +72,7 @@ export default function CommonQuestionsPage() {
     <>
       <Hero
         title="Answers to the Questions We Hear Most Often"
-        subtitle="We understand you may have questions before reaching out. Here are honest answers to the ones we hear most frequently. If your question is not here, please call us. We are always happy to talk."
+        subtitle="We understand you may have questions before reaching out. Here are honest answers to the ones we hear most frequently. If your question is not here, please get in touch. We are always happy to help."
       />
 
       <section className="bg-cream py-16 md:py-24">
@@ -83,7 +83,7 @@ export default function CommonQuestionsPage() {
 
       <CTASection
         title="Still Have Questions?"
-        subtitle="Call us. We are happy to chat. There is no obligation and no silly questions."
+        subtitle="Reach out. We are happy to help. There is no obligation and no silly questions."
         ctaText="Get in Touch"
       />
     </>

@@ -5,17 +5,15 @@ export const SITE_DESCRIPTOR = "Helping Ontario homeowners resolve unfair HVAC c
 export const SITE_TAGLINE = "A fair resolution. A fresh start.";
 
 export const CONTACT = {
-  phone: "(647) 478-1284",
-  phoneHref: "tel:+16474781284",
-  email: "info@oakwellpartners.ca",
-  emailHref: "mailto:info@oakwellpartners.ca",
-  hours: "Monday to Friday, 9am to 6pm ET",
+  email: "hello@oakwellpartners.ca",
+  emailHref: "mailto:hello@oakwellpartners.ca",
   serviceArea: "Serving homeowners across Ontario",
 };
 
 export const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Your Rights", href: "/your-rights" },
+  { label: "How We Help", href: "/how-we-help" },
   { label: "Success Stories", href: "/success-stories" },
   { label: "About", href: "/about" },
   { label: "Common Questions", href: "/common-questions" },

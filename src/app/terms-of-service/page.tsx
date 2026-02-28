@@ -75,10 +75,6 @@ export default function TermsOfServicePage() {
               Questions about these terms can be directed to{" "}
               <a href={CONTACT.emailHref} className="text-deep-teal hover:underline">
                 {CONTACT.email}
-              </a>{" "}
-              or{" "}
-              <a href={CONTACT.phoneHref} className="text-deep-teal hover:underline">
-                {CONTACT.phone}
               </a>.
             </p>
           </article>

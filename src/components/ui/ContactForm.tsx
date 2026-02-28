@@ -7,8 +7,22 @@ export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const FORM_ACTION = "https://formspree.io/f/YOUR_FORM_ID";
+  const isFormConfigured = !FORM_ACTION.includes("YOUR_FORM_ID");
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!isFormConfigured) {
+      console.error(
+        "Formspree form ID has not been configured. Form submissions will not work."
+      );
+      alert(
+        "This form is not yet configured. Please contact us by email instead."
+      );
+      return;
+    }
+
     setIsSubmitting(true);
 
     const form = e.currentTarget;
@@ -44,10 +58,7 @@ export default function ContactForm() {
           Thank You
         </h3>
         <p className="text-charcoal text-lg">
-          We have received your information and will be in touch within one business day. If you would like to speak with us sooner, please call us directly at{" "}
-          <a href="tel:+16474781284" className="text-deep-teal font-semibold hover:underline">
-            (647) 478-1284
-          </a>.
+          We have received your information and will be in touch within one business day.
         </p>
       </div>
     );
@@ -55,7 +66,7 @@ export default function ContactForm() {
 
   return (
     <form
-      action="https://formspree.io/f/YOUR_FORM_ID"
+      action={FORM_ACTION}
       method="POST"
       onSubmit={handleSubmit}
       className="space-y-6"
@@ -70,6 +81,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
+          autoComplete="name"
           className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
         />
       </div>
@@ -84,6 +96,7 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           required
+          autoComplete="tel"
           className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
         />
       </div>
@@ -98,6 +111,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
+          autoComplete="email"
           className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
         />
       </div>
@@ -112,6 +126,7 @@ export default function ContactForm() {
           id="city"
           name="city"
           required
+          autoComplete="address-level2"
           className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
         />
       </div>
@@ -182,7 +197,7 @@ export default function ContactForm() {
           Your information is kept strictly confidential. This consultation is free and there is no obligation to proceed. We will never share your information with anyone outside of our team and the legal professionals working on your case.
         </p>
         <p className="text-charcoal text-sm font-medium">
-          Not sure if you qualify? That is exactly what this conversation is for. There are no silly questions and no judgement. Call us or fill out the form and we will help you understand where you stand.
+          Not sure if you qualify? That is exactly what this conversation is for. There are no silly questions and no judgement. Fill out the form and we will help you understand where you stand.
         </p>
       </div>
     </form>

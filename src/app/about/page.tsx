@@ -27,7 +27,7 @@ const values = [
   {
     title: "Accessibility",
     description:
-      "We are always available by phone. We speak in plain language. We make sure you understand every step.",
+      "We are always available. We speak in plain language. We make sure you understand every step.",
   },
 ];
 

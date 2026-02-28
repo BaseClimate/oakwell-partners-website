@@ -68,10 +68,6 @@ export default function PrivacyPolicyPage() {
               If you have questions about this privacy policy, please contact us at{" "}
               <a href={CONTACT.emailHref} className="text-deep-teal hover:underline">
                 {CONTACT.email}
-              </a>{" "}
-              or{" "}
-              <a href={CONTACT.phoneHref} className="text-deep-teal hover:underline">
-                {CONTACT.phone}
               </a>.
             </p>
           </article>

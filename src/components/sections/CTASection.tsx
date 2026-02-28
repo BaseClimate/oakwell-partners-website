@@ -1,12 +1,10 @@
 import Button from "@/components/ui/Button";
-import { CONTACT } from "@/lib/constants";
 
 interface CTASectionProps {
   title?: string;
   subtitle?: string;
   ctaText?: string;
   ctaHref?: string;
-  showPhone?: boolean;
   variant?: "teal" | "cream" | "white";
 }
 
@@ -15,7 +13,6 @@ export default function CTASection({
   subtitle = "A free, confidential conversation is all it takes. We will review your situation, explain whether any of the five key breaches apply, and tell you honestly what your options are. No pressure, no obligation.",
   ctaText = "Get My Free Review",
   ctaHref = "/get-started",
-  showPhone = true,
   variant = "teal",
 }: CTASectionProps) {
   const variants = {
@@ -50,23 +47,6 @@ export default function CTASection({
             {ctaText}
           </Button>
         </div>
-        {showPhone && (
-          <p
-            className={`mt-6 text-base ${
-              variant === "teal" ? "text-cream/80" : "text-medium-grey"
-            }`}
-          >
-            Or call us directly at{" "}
-            <a
-              href={CONTACT.phoneHref}
-              className={`font-semibold hover:underline ${
-                variant === "teal" ? "text-warm-gold" : "text-deep-teal"
-              }`}
-            >
-              {CONTACT.phone}
-            </a>
-          </p>
-        )}
       </div>
     </section>
   );

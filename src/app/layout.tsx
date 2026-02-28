@@ -3,6 +3,7 @@ import { Lora, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BackToTop from "@/components/ui/BackToTop";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -60,8 +61,7 @@ export default function RootLayout({
               description:
                 "Helping Ontario homeowners resolve unfair HVAC contracts",
               url: "https://oakwellpartners.ca",
-              telephone: "+16474781284",
-              email: "info@oakwellpartners.ca",
+              email: "hello@oakwellpartners.ca",
               areaServed: {
                 "@type": "Province",
                 name: "Ontario",
@@ -84,6 +84,7 @@ export default function RootLayout({
         </a>
         <Header />
         <main id="main-content">{children}</main>
+        <BackToTop />
         <Footer />
       </body>
     </html>
