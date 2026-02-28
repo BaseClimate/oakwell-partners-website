@@ -78,7 +78,7 @@ export default function HomePage() {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
             You Keep Your Equipment. Always.
           </h2>
-          <p className="text-cream/90 text-lg leading-relaxed">
+          <p className="text-white/90 text-lg leading-relaxed">
             This is one of the most common concerns we hear, so let us be clear: under Ontario law, when an agreement is resolved due to breaches of the Consumer Protection Act, you keep the equipment that was installed in your home. Your furnace, your water heater, your air system — it stays. This is not a grey area. The law supports this outcome, and it applies in every case we handle.
           </p>
         </div>

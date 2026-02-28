@@ -111,7 +111,7 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[calc(theme(spacing.16)+36px)] bg-white z-40">
+        <div className="lg:hidden fixed inset-0 top-[calc(theme(spacing.16)+2.25rem)] bg-white z-40">
           <nav className="flex flex-col p-6 gap-2" aria-label="Mobile navigation">
             {NAV_ITEMS.map((item) => (
               <Link

@@ -34,7 +34,21 @@ export const metadata: Metadata = {
     siteName: "Oakwell Partners",
     title: "Oakwell Partners — Helping Ontario Homeowners Resolve Unfair HVAC Contracts",
     description:
-      "Your HVAC contract may have never been valid. Oakwell Partners helps Ontario homeowners resolve unfair furnace, water heater, and air system contracts affordably. Free consultation.",
+      "If you were pressured into an HVAC agreement at your front door, Ontario law may be on your side. Free consultation, no obligation.",
+    images: [
+      {
+        url: "https://oakwellpartners.ca/images/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Oakwell Partners — A fair resolution. A fresh start.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Oakwell Partners",
+    description: "Helping Ontario homeowners resolve unfair HVAC contracts",
+    images: ["https://oakwellpartners.ca/images/og-image.svg"],
   },
   robots: {
     index: true,
