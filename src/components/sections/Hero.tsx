@@ -38,12 +38,12 @@ export default function Hero({
               {title}
             </h1>
             {subtitle && (
-              <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+              <p className="text-white text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
                 {subtitle}
               </p>
             )}
             {altText && (
-              <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+              <p className="text-white text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
                 {altText}
               </p>
             )}
@@ -55,7 +55,7 @@ export default function Hero({
               </div>
             )}
             {trustIndicators && (
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/80 text-sm">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/90 text-sm">
                 {trustIndicators.map((indicator, i) => (
                   <span key={i} className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-warm-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -80,7 +80,7 @@ export default function Hero({
             {title}
           </h1>
           {subtitle && (
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl">
+            <p className="text-white text-lg md:text-xl leading-relaxed max-w-2xl">
               {subtitle}
             </p>
           )}
