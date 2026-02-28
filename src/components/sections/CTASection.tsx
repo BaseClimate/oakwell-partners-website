@@ -33,7 +33,7 @@ export default function CTASection({
         </h2>
         <p
           className={`text-lg leading-relaxed mb-8 ${
-            variant === "teal" ? "text-cream/90" : "text-charcoal"
+            variant === "teal" ? "text-white" : "text-charcoal"
           }`}
         >
           {subtitle}

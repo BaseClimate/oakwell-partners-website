@@ -55,7 +55,7 @@ export default function Hero({
               </div>
             )}
             {trustIndicators && (
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/90 text-sm">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white text-sm">
                 {trustIndicators.map((indicator, i) => (
                   <span key={i} className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-warm-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
