@@ -1,65 +1,91 @@
-import Image from "next/image";
+import Hero from "@/components/sections/Hero";
+import FiveBreaches from "@/components/sections/FiveBreaches";
+import HowWeHelp from "@/components/sections/HowWeHelp";
+import Testimonials from "@/components/sections/Testimonials";
+import CTASection from "@/components/sections/CTASection";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* Hero Section */}
+      <Hero
+        variant="home"
+        title="Your HVAC Contract May Have Never Been Valid"
+        subtitle="If you were pressured into signing a furnace, water heater, or air system agreement at your front door, the 2018 amendments to Ontario's Consumer Protection Act may mean that contract was never enforceable in the first place. You are not asking for a favour. You are asserting a right."
+        altText="Oakwell Partners helps Ontario homeowners resolve these agreements quickly, affordably, and with your dignity intact. And no matter the outcome, you keep your equipment."
+        ctaText="Find Out Where You Stand — It's Free"
+        ctaHref="/get-started"
+        ctaVariant="gold"
+        trustIndicators={[
+          "No obligation",
+          "Completely confidential",
+          "You keep your equipment",
+        ]}
+      />
+
+      {/* The Problem Section */}
+      <section className="bg-cream py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark-teal mb-6">
+            Why So Many Homeowners Feel Stuck
+          </h2>
+          <div className="space-y-4 text-charcoal text-lg leading-relaxed">
+            <p>
+              Thousands of Ontario homeowners have signed HVAC rental or financing agreements without realising what they were truly agreeing to. The monthly payments stretch over 10, 15, even 20 years and add up to many times the actual value of the equipment. In many cases, a registration has been placed against the homeowner&apos;s property title.
+            </p>
+            <p>
+              The reason these companies continue to operate this way is simple: they count on you not knowing your rights, and they count on the cost of hiring a lawyer being too high for most families. Pursuing a resolution through the traditional legal process can cost thousands of dollars in legal fees alone — more than most people can justify, even when the law is clearly on their side.
+            </p>
+            <p className="text-deep-teal font-semibold text-xl">
+              That imbalance is exactly what Oakwell Partners was built to solve.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Five Breaches Section */}
+      <FiveBreaches />
+
+      {/* Who You Are Actually Dealing With Section */}
+      <section className="bg-cream py-16 md:py-24">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark-teal mb-6">
+            Your Contract May Not Be With Who You Think
+          </h2>
+          <div className="space-y-4 text-charcoal text-lg leading-relaxed">
+            <p>
+              Many homeowners assume their agreement is with the company that installed the equipment. In most cases, it is not. Your contract is typically held by a separate finance company. The HVAC contractor installs the equipment and moves on. The finance company collects your monthly payments and holds the registration against your property.
+            </p>
+            <p>
+              If you have already tried calling the installer and been told they cannot help, this is why. And if you have called the finance company and been told there is nothing they can do, that is not the full picture.
+            </p>
+            <p>
+              Oakwell Partners understands how these arrangements work because we have handled hundreds of them. We address both the finance company and the HVAC contractor as part of your resolution, because a complete outcome requires dealing with both parties. You do not need to navigate this on your own.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Help Section */}
+      <HowWeHelp />
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Keep Your Equipment Callout */}
+      <section className="bg-deep-teal py-16 md:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-6">
+            You Keep Your Equipment. Always.
+          </h2>
+          <p className="text-cream/90 text-lg leading-relaxed">
+            This is one of the most common concerns we hear, so let us be clear: under Ontario law, when an agreement is resolved due to breaches of the Consumer Protection Act, you keep the equipment that was installed in your home. Your furnace, your water heater, your air system — it stays. This is not a grey area. The law supports this outcome, and it applies in every case we handle.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Final CTA */}
+      <CTASection />
+    </>
   );
 }

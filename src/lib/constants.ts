@@ -1,0 +1,40 @@
+export const SITE_NAME = "Oakwell Partners";
+export const SITE_DOMAIN = "oakwellpartners.ca";
+export const SITE_URL = "https://oakwellpartners.ca";
+export const SITE_DESCRIPTOR = "Helping Ontario homeowners resolve unfair HVAC contracts";
+export const SITE_TAGLINE = "A fair resolution. A fresh start.";
+
+export const CONTACT = {
+  phone: "(647) 478-1284",
+  phoneHref: "tel:+16474781284",
+  email: "info@oakwellpartners.ca",
+  emailHref: "mailto:info@oakwellpartners.ca",
+  hours: "Monday to Friday, 9am to 6pm ET",
+  serviceArea: "Serving homeowners across Ontario",
+};
+
+export const NAV_ITEMS = [
+  { label: "Home", href: "/" },
+  { label: "Your Rights", href: "/your-rights" },
+  { label: "Success Stories", href: "/success-stories" },
+  { label: "About", href: "/about" },
+  { label: "Common Questions", href: "/common-questions" },
+];
+
+export const FOOTER_NAV = [
+  { label: "Home", href: "/" },
+  { label: "Your Rights", href: "/your-rights" },
+  { label: "How We Help", href: "/how-we-help" },
+  { label: "Success Stories", href: "/success-stories" },
+  { label: "About", href: "/about" },
+  { label: "Common Questions", href: "/common-questions" },
+  { label: "Get Started", href: "/get-started" },
+];
+
+export const LEGAL_LINKS = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
+];
+
+export const LEGAL_DISCLAIMER =
+  "Oakwell Partners is a homeowner advocacy and case management service. We are not a law firm and do not provide legal advice. We act as your authorised agent, prepare cases, manage negotiations, and coordinate with fully licensed, independent legal professionals when legal proceedings are required. Each situation is unique and outcomes depend on the specific circumstances of each case. The information on this website is not legal advice and should not be relied upon as such.";
