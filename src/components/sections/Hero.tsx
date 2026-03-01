@@ -25,16 +25,18 @@ export default function Hero({
     return (
       <section className="relative overflow-hidden">
         {/* Hero background image with gradient overlay */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(199, 148, 74, 0.3) 0%, transparent 50%),
-                              radial-gradient(circle at 75% 75%, rgba(27, 107, 109, 0.3) 0%, transparent 50%),
-                              linear-gradient(135deg, #0E4446 0%, #1B6B6D 50%, #0E4446 100%),
-                              url('/images/hero-bg.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }} />
-        </div>
+        {/* Background photo */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url('/images/hero-bg.jpg')` }}
+        />
+        {/* Dark teal overlay so text stays readable */}
+        <div className="absolute inset-0 bg-dark-teal/80" />
+        {/* Subtle brand accent gradients */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(199, 148, 74, 0.15) 0%, transparent 50%),
+                            radial-gradient(circle at 75% 75%, rgba(27, 107, 109, 0.2) 0%, transparent 50%)`,
+        }} />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
           <div className="max-w-3xl">
