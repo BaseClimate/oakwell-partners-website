@@ -29,9 +29,18 @@ export default function Testimonials() {
   return (
     <section className="bg-light-teal py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark-teal text-center mb-12">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark-teal text-center mb-10">
           From People Who Have Been Where You Are
         </h2>
+
+        <div className="max-w-5xl mx-auto mb-10 overflow-hidden rounded-lg">
+          <img
+            src="/images/couple-home.jpg"
+            alt="Illustration of a senior couple relaxing at home after resolving their HVAC contract"
+            className="w-full max-h-72 object-cover"
+            loading="lazy"
+          />
+        </div>
 
         <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
