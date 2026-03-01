@@ -10,7 +10,7 @@ interface CTASectionProps {
 
 export default function CTASection({
   title = "Ready to Find Out Where You Stand?",
-  subtitle = "A free, confidential conversation is all it takes. We will review your situation, explain whether any of the five key breaches apply, and tell you honestly what your options are. No pressure, no obligation.",
+  subtitle = "A free, confidential conversation is all it takes. We will review your situation, explain whether any of the six key breaches apply, and tell you honestly what your options are. No pressure, no obligation.",
   ctaText = "Get My Free Review",
   ctaHref = "/get-started",
   variant = "teal",

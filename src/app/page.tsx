@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/Hero";
-import FiveBreaches from "@/components/sections/FiveBreaches";
+import SixBreaches from "@/components/sections/SixBreaches";
 import HowWeHelp from "@/components/sections/HowWeHelp";
 import Testimonials from "@/components/sections/Testimonials";
 import CTASection from "@/components/sections/CTASection";
@@ -52,11 +52,21 @@ export default function HomePage() {
               />
             </div>
           </div>
+
+          {/* How It Happens infographic */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <img
+              src="/images/infographic-how-it-happens.jpg"
+              alt="Infographic showing how homeowners get locked into HVAC contracts: The Knock, The Pressure Sign, A Lien on Your Home, 10 to 20 Years of Payments"
+              className="w-full rounded-lg shadow-md"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
-      {/* Five Breaches Section */}
-      <FiveBreaches />
+      {/* Six Breaches Section */}
+      <SixBreaches />
 
       {/* Ontario Street Divider */}
       <div className="relative w-full max-h-48 md:max-h-64 overflow-hidden">

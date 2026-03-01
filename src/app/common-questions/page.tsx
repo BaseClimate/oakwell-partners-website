@@ -18,7 +18,7 @@ const faqItems = [
   {
     question: "What does Oakwell Partners actually do?",
     answer:
-      "We are a homeowner advocacy and case management service. We review your HVAC agreement against the five key breaches under the 2018 amendments, gather your evidence, prepare all documentation, and act as your authorised agent in negotiations with the finance company and the HVAC contractor. When legal action is required, we assign a licensed legal representative to your case. We manage the entire process from start to resolution.",
+      "We are a homeowner advocacy and case management service. We review your HVAC agreement against the six key breaches under the 2018 amendments, gather your evidence, prepare all documentation, and act as your authorised agent in negotiations with the finance company and the HVAC contractor. When legal action is required, we assign a licensed legal representative to your case. We manage the entire process from start to resolution.",
   },
   {
     question: "How are you able to offer this at a lower cost than a law firm?",
@@ -28,7 +28,7 @@ const faqItems = [
   {
     question: "Is the initial consultation really free?",
     answer:
-      "Yes. Your first conversation with us is completely free and confidential. We review your situation, explain whether any of the five breaches apply, and give you an honest assessment of your options. There is absolutely no obligation to proceed.",
+      "Yes. Your first conversation with us is completely free and confidential. We review your situation, explain whether any of the six breaches apply, and give you an honest assessment of your options. There is absolutely no obligation to proceed.",
   },
   {
     question: "Do I really get to keep my equipment?",

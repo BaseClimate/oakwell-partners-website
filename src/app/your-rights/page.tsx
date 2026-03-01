@@ -5,7 +5,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Your Rights Under the 2018 Amendments",
   description:
-    "Learn about the 2018 amendments to Ontario's Consumer Protection Act and how they protect homeowners from unfair HVAC contracts. Five key breaches that may make your agreement unenforceable.",
+    "Learn about the 2018 amendments to Ontario's Consumer Protection Act and how they protect homeowners from unfair HVAC contracts. Six key breaches that may make your agreement unenforceable.",
 };
 
 const breaches = [
@@ -39,6 +39,12 @@ const breaches = [
     description:
       "If the equipment installed in your home was not installed correctly — resulting in performance problems, safety issues, or additional costs to remedy — this may constitute a further breach of both the agreement and the Act. Homeowners are entitled to equipment that functions properly and safely.",
   },
+  {
+    number: 6,
+    title: "Unfulfilled Rebate Promises",
+    description:
+      "If the salesperson promised government rebates, manufacturer rebates, or other financial incentives that never materialised, these unfulfilled promises may constitute a misrepresentation under the Act. Many homeowners agreed to their contracts partly based on rebate promises that were never honoured.",
+  },
 ];
 
 const entitlements = [
@@ -70,14 +76,22 @@ export default function YourRightsPage() {
             The amendments established that certain practices by HVAC companies are unlawful. When these practices are present in the formation or execution of your agreement, the agreement itself may be unenforceable — meaning it may never have been valid at all.
           </p>
           <p className="text-charcoal text-lg leading-relaxed mb-8">
-            There are five key areas where these agreements commonly breach the Act:
+            There are six key areas where these agreements commonly breach the Act:
           </p>
         </div>
       </section>
 
-      {/* Five Breaches Detail */}
+      {/* Six Breaches Detail */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto mb-10">
+            <img
+              src="/images/infographic-six-grounds.jpg"
+              alt="Infographic showing six grounds for having your HVAC agreement set aside — only one is enough"
+              className="w-full rounded-lg shadow-md"
+              loading="lazy"
+            />
+          </div>
           <div className="space-y-8">
             {breaches.map((breach) => (
               <div
@@ -110,7 +124,7 @@ export default function YourRightsPage() {
             What This Means for You
           </h2>
           <p className="text-charcoal text-lg leading-relaxed mb-6">
-            If one or more of these five breaches applies to your agreement, you may be entitled to:
+            If one or more of these six breaches applies to your agreement, you may be entitled to:
           </p>
           <ul className="space-y-3 mb-8">
             {entitlements.map((item, index) => (
@@ -123,7 +137,7 @@ export default function YourRightsPage() {
             ))}
           </ul>
           <p className="text-charcoal text-lg leading-relaxed font-medium bg-light-teal rounded-lg p-6">
-            The law does not require you to prove all five breaches. A single breach may be sufficient to have the agreement set aside.
+            The law does not require you to prove all six breaches. A single breach may be sufficient to have the agreement set aside.
           </p>
         </div>
       </section>

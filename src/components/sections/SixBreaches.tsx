@@ -29,19 +29,34 @@ const breaches = [
     description:
       "If the equipment was improperly installed — leading to performance issues, safety concerns, or additional costs — this may also constitute a breach of the agreement and the Act.",
   },
+  {
+    number: 6,
+    title: "They promised rebates you never received",
+    description:
+      "If the salesperson promised government rebates, manufacturer rebates, or other financial incentives that never materialised, these unfulfilled promises may constitute a misrepresentation under the Act. Many homeowners agreed to their contracts partly based on rebate promises that were never honoured.",
+  },
 ];
 
-export default function FiveBreaches() {
+export default function SixBreaches() {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark-teal mb-6">
-            Five Reasons Your Agreement May Not Be Enforceable
+            Six Reasons Your Agreement May Not Be Enforceable
           </h2>
           <p className="text-charcoal text-lg leading-relaxed">
             The 2018 amendments to Ontario&apos;s Consumer Protection Act created specific protections for homeowners who enter into agreements for items deemed essential to the home, including furnaces, water heaters, and air systems. If any of the following apply to your situation, your agreement may have been invalid from the moment it was signed:
           </p>
+        </div>
+
+        <div className="max-w-2xl mx-auto mb-10">
+          <img
+            src="/images/infographic-six-grounds.jpg"
+            alt="Infographic showing six grounds for having your HVAC agreement set aside — only one is enough"
+            className="w-full rounded-lg shadow-md"
+            loading="lazy"
+          />
         </div>
 
         <div className="grid gap-6 md:gap-8 max-w-4xl mx-auto">
@@ -69,7 +84,7 @@ export default function FiveBreaches() {
 
         <div className="max-w-3xl mx-auto mt-12 bg-light-teal rounded-lg p-6 md:p-8">
           <p className="text-charcoal leading-relaxed text-lg">
-            <strong className="text-dark-teal">The important thing to understand:</strong> if any of these breaches apply, you may be in a position to argue that the agreement was never valid in the first place. You may be entitled to have the contract set aside, the property registration removed, and in some cases, you may be able to request damages and court costs. And regardless of the outcome, you keep your equipment. The law is clear on this.
+            <strong className="text-dark-teal">The important thing to understand:</strong> if any of these six breaches apply, you may be in a position to argue that the agreement was never valid in the first place. You may be entitled to have the contract set aside, the property registration removed, and in some cases, you may be able to request damages and court costs. And regardless of the outcome, you keep your equipment. The law is clear on this.
           </p>
         </div>
       </div>

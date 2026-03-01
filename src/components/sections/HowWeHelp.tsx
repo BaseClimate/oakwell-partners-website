@@ -11,7 +11,7 @@ const steps = [
     number: "2",
     title: "We build your case",
     description:
-      "If you decide to move forward, our team gathers the necessary evidence, reviews your agreement against the five key breaches under the 2018 amendments, and prepares all required documentation using our digitised platform.",
+      "If you decide to move forward, our team gathers the necessary evidence, reviews your agreement against the six key breaches under the 2018 amendments, and prepares all required documentation using our digitised platform.",
   },
   {
     number: "3",
@@ -105,6 +105,16 @@ export default function HowWeHelp() {
           <h3 className="font-heading text-2xl md:text-3xl font-bold text-dark-teal mb-8 text-center">
             What to Expect, Step by Step
           </h3>
+
+          {/* Path to Resolution infographic */}
+          <div className="max-w-md mx-auto mb-10">
+            <img
+              src="/images/infographic-path-resolution.jpg"
+              alt="Infographic showing the five-step path to resolution: Free Conversation, We Review Your Case, We Negotiate For You, Legal Action If Needed, Resolution"
+              className="w-full rounded-lg shadow-md"
+              loading="lazy"
+            />
+          </div>
           <div className="space-y-6">
             {steps.map((step) => (
               <div key={step.number} className="flex gap-5">
