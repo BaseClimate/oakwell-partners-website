@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_ITEMS, CONTACT } from "@/lib/constants";
 
 export default function Header() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -68,15 +70,24 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-charcoal hover:text-deep-teal font-medium text-[15px] transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const isActive =
+                item.href === "/" ? pathname === "/" : pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-medium text-[15px] transition-colors ${
+                    isActive
+                      ? "text-deep-teal border-b-2 border-warm-gold pb-1"
+                      : "text-charcoal hover:text-deep-teal"
+                  }`}
+                  {...(isActive ? { "aria-current": "page" as const } : {})}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Desktop CTA */}
@@ -113,16 +124,25 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 top-[calc(theme(spacing.16)+2.25rem)] bg-white z-40">
           <nav className="flex flex-col p-6 gap-2" aria-label="Mobile navigation">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-charcoal hover:text-deep-teal font-medium text-lg py-3 border-b border-gray-100 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const isActive =
+                item.href === "/" ? pathname === "/" : pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-medium text-lg py-3 border-b border-gray-100 transition-colors ${
+                    isActive
+                      ? "text-deep-teal border-l-3 border-l-warm-gold pl-3"
+                      : "text-charcoal hover:text-deep-teal"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  {...(isActive ? { "aria-current": "page" as const } : {})}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
             <Link
               href="/get-started"
               className="mt-4 inline-flex items-center justify-center px-6 py-3 bg-deep-teal text-white font-semibold rounded-lg hover:bg-dark-teal transition-colors text-center min-h-[44px]"

@@ -7,8 +7,8 @@ export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const FORM_ACTION = "https://formspree.io/f/YOUR_FORM_ID";
-  const isFormConfigured = !FORM_ACTION.includes("YOUR_FORM_ID");
+  const FORM_ACTION = "https://formspree.io/f/xlgwkawl";
+  const isFormConfigured = true;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -116,40 +116,39 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* City */}
-      <div>
-        <label htmlFor="city" className="block text-charcoal font-semibold mb-1.5">
-          City or town in Ontario <span className="text-warm-gold">*</span>
-        </label>
-        <input
-          type="text"
-          id="city"
-          name="city"
-          required
-          autoComplete="address-level2"
-          className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
-        />
-      </div>
-
-      {/* Equipment type */}
-      <div>
-        <label htmlFor="equipment" className="block text-charcoal font-semibold mb-1.5">
-          What type of equipment is involved? <span className="text-warm-gold">*</span>
-        </label>
-        <select
-          id="equipment"
-          name="equipment"
-          required
-          className="w-full min-h-[48px] px-4 py-3 border border-gray-200 rounded-lg text-charcoal bg-white focus:border-deep-teal focus:ring-2 focus:ring-deep-teal/20 transition-all"
-        >
-          <option value="">Please select...</option>
-          <option value="Furnace">Furnace</option>
-          <option value="Water Heater">Water Heater</option>
-          <option value="Air System">Air System</option>
-          <option value="Multiple">Multiple</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
+      {/* Equipment type - checkboxes */}
+      <fieldset>
+        <legend className="block text-charcoal font-semibold mb-2">
+          What type of equipment is involved?{" "}
+          <span className="text-medium-grey font-normal">(select all that apply)</span>
+        </legend>
+        <div className="grid grid-cols-2 gap-2">
+          {[
+            "Furnace",
+            "Tankless Water Heater",
+            "Air Conditioning",
+            "Heat Pump",
+            "HEPA Filter",
+            "Water Filter",
+            "Insulation",
+            "Windows",
+            "Other",
+          ].map((item) => (
+            <label
+              key={item}
+              className="flex items-center gap-2.5 px-3 py-2.5 rounded-lg border border-gray-200 hover:border-deep-teal/40 cursor-pointer transition-colors has-[:checked]:border-deep-teal has-[:checked]:bg-light-teal"
+            >
+              <input
+                type="checkbox"
+                name="equipment"
+                value={item}
+                className="w-4 h-4 rounded border-gray-300 text-deep-teal focus:ring-deep-teal/20"
+              />
+              <span className="text-charcoal text-[15px]">{item}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
 
       {/* Description */}
       <div>

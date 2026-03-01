@@ -68,17 +68,6 @@ export default function HomePage() {
       {/* Six Breaches Section */}
       <SixBreaches />
 
-      {/* Ontario Street Divider */}
-      <div className="relative w-full max-h-48 md:max-h-64 overflow-hidden">
-        <img
-          src="/images/ontario-street.jpg"
-          alt="Tree-lined residential street in an Ontario neighbourhood"
-          className="w-full h-48 md:h-64 object-cover"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-dark-teal/20" />
-      </div>
-
       {/* Who You Are Actually Dealing With Section */}
       <section className="bg-cream py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

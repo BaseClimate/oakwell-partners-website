@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const stories = [
   {
     title: "Margaret's Story: The Water Heater That Cost Five Times Its Value",
-    image: "/images/woman-phone.jpg",
+    image: "/images/portrait-margaret.jpg",
     imageAlt: "Portrait of Margaret R.",
     client: "Margaret R., retired teacher, Barrie, ON",
     situation:

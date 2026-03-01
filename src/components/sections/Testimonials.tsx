@@ -4,7 +4,7 @@ const testimonials = [
       "I was embarrassed that I had signed without reading everything carefully. Oakwell never made me feel that way. They were kind, patient, and took care of everything. I kept my furnace and the lien was removed.",
     name: "Margaret R.",
     location: "Barrie, ON",
-    image: "/images/woman-phone.jpg",
+    image: "/images/portrait-margaret.jpg",
     imageAlt: "Portrait of Margaret R.",
   },
   {
@@ -25,11 +25,11 @@ const testimonials = [
   },
   {
     quote:
-      "They treated my situation with real care. I felt like I was talking to family, not a company. They explained the 2018 amendments to me in a way I could actually understand.",
-    name: "George M.",
-    location: "Kitchener, ON",
-    image: "/images/ontario-street.jpg",
-    imageAlt: "Ontario neighbourhood street",
+      "We were panicking about losing our buyer. Oakwell moved quickly and kept us calm throughout. We closed on time and even recovered some of our costs.",
+    name: "Robert & Susan T.",
+    location: "Peterborough, ON",
+    image: "/images/portrait-robert-susan.jpg",
+    imageAlt: "Portrait of Robert and Susan T.",
   },
   {
     quote:
