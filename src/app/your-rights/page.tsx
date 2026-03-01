@@ -64,34 +64,38 @@ export default function YourRightsPage() {
       />
 
       <section className="bg-cream py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-charcoal text-lg leading-relaxed mb-8">
-            If your agreement involved a furnace, water heater, air conditioner, air purifier, or similar home equipment, these protections likely apply to you.
-          </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="md:flex md:items-start md:gap-12 max-w-6xl mx-auto">
+            <div className="md:w-3/5">
+              <p className="text-charcoal text-lg leading-relaxed mb-8">
+                If your agreement involved a furnace, water heater, air conditioner, air purifier, or similar home equipment, these protections likely apply to you.
+              </p>
 
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-dark-teal mb-4">
-            What the 2018 Amendments Protect You From
-          </h2>
-          <p className="text-charcoal text-lg leading-relaxed mb-4">
-            The amendments established that certain practices by HVAC companies are unlawful. When these practices are present in the formation or execution of your agreement, the agreement itself may be unenforceable — meaning it may never have been valid at all.
-          </p>
-          <p className="text-charcoal text-lg leading-relaxed mb-8">
-            There are six key areas where these agreements commonly breach the Act:
-          </p>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-dark-teal mb-4">
+                What the 2018 Amendments Protect You From
+              </h2>
+              <p className="text-charcoal text-lg leading-relaxed mb-4">
+                The amendments established that certain practices by HVAC companies are unlawful. When these practices are present in the formation or execution of your agreement, the agreement itself may be unenforceable — meaning it may never have been valid at all.
+              </p>
+              <p className="text-charcoal text-lg leading-relaxed mb-8">
+                There are six key areas where these agreements commonly breach the Act:
+              </p>
+            </div>
+            <div className="mt-8 md:mt-0 md:w-2/5">
+              <img
+                src="/images/infographic-six-grounds.jpg"
+                alt="Infographic showing six grounds for having your HVAC agreement set aside — only one is enough"
+                className="w-full rounded-lg shadow-md"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Six Breaches Detail */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto mb-10">
-            <img
-              src="/images/infographic-six-grounds.jpg"
-              alt="Infographic showing six grounds for having your HVAC agreement set aside — only one is enough"
-              className="w-full rounded-lg shadow-md"
-              loading="lazy"
-            />
-          </div>
           <div className="space-y-8">
             {breaches.map((breach) => (
               <div
