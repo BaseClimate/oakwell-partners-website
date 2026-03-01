@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const stories = [
   {
     title: "Margaret's Story: The Water Heater That Cost Five Times Its Value",
+    image: "/images/woman-phone.jpg",
+    imageAlt: "Portrait of Margaret R.",
     client: "Margaret R., retired teacher, Barrie, ON",
     situation:
       "A salesperson knocked on Margaret's door and replaced her working water heater with a new rental unit, promising lower energy bills and free maintenance. The total obligation over the life of the agreement was over $18,000 for equipment worth a fraction of that amount. A lien was registered against her home. The promised energy savings never appeared, and the annual service visit never happened.",
@@ -25,6 +27,8 @@ const stories = [
   },
   {
     title: "James and His Mother: Protecting a Parent",
+    image: "/images/portrait-james-mother.jpg",
+    imageAlt: "Portrait of James K. with his mother",
     client: "James K., calling on behalf of his mother, Whitby, ON",
     situation:
       "James's mother, who lives alone, was visited by a salesperson claiming to represent a government energy programme. She signed agreements for a new furnace and air purification system with a combined obligation of over $38,000. When James discovered the registration on her home during a refinancing process, he knew something was wrong. The equipment had been installed the day after signing.",
@@ -39,6 +43,8 @@ const stories = [
   },
   {
     title: "Patricia's Story: The Air System She Never Needed",
+    image: "/images/portrait-patricia.jpg",
+    imageAlt: "Portrait of Patricia D.",
     client: "Patricia D., retired nurse, Kingston, ON",
     situation:
       "Patricia was told by a door-to-door salesperson that her home's air quality was dangerously poor and that she needed an air filtration system immediately. She signed an agreement with a total obligation of over $7,500 for a unit worth far less. The salesperson claimed the programme was government-subsidised. It was not. No maintenance was ever provided.",
@@ -53,6 +59,8 @@ const stories = [
   },
   {
     title: "Robert and Susan: A Couple's Fresh Start",
+    image: "/images/portrait-robert-susan.jpg",
+    imageAlt: "Portrait of Robert and Susan T.",
     client: "Robert and Susan T., Peterborough, ON",
     situation:
       "The couple signed a contract for a new furnace after being told their current system was unsafe and inefficient. They were promised annual servicing and substantial energy savings. The total obligation was over $28,000. Neither the servicing nor the savings ever materialised. When they tried to sell their home two years later, the registration on their property nearly derailed the sale.",
@@ -64,6 +72,22 @@ const stories = [
       "Agreement set aside. Registration removed. The couple kept the furnace and completed the sale of their home on schedule. Damages and court costs were also recovered.",
     quote:
       "We were panicking about losing our buyer. Oakwell moved quickly and kept us calm throughout. We closed on time and even recovered some of our costs.",
+  },
+  {
+    title: "Dorothy's Story: A Court Victory After Years of Payments",
+    image: "/images/portrait-dorothy.jpg",
+    imageAlt: "Portrait of Dorothy W.",
+    client: "Dorothy W., retired, Oshawa, ON",
+    situation:
+      "Dorothy had been paying monthly for a furnace and water heater for over six years when her grandson told her about the 2018 amendments. The salesperson had come to her door uninvited, promised free maintenance and energy savings, and told her the programme was endorsed by her utility company. None of it was true. The total obligation exceeded $32,000 for equipment worth a small fraction of that amount. A registration had been placed on her home without her fully understanding what it meant.",
+    breaches:
+      "Unsolicited door-to-door contact, unconscionable pricing, misrepresented energy savings, unfulfilled maintenance commitments, and misrepresentation of utility company endorsement.",
+    process:
+      "When the finance company refused to negotiate, we assigned a licensed legal representative to Dorothy's case. Because our digitised platform had already prepared all documentation and evidence, the legal process was efficient and focused. The matter was resolved through the courts.",
+    outcome:
+      "Agreement declared invalid by the court. Property registration removed. Dorothy kept all equipment. Damages and court costs were awarded in her favour.",
+    quote:
+      "I had been paying for six years and thought there was nothing I could do. Oakwell showed me that the law was on my side all along. Even when it went to court, they made it manageable. I only wish I had known sooner.",
   },
 ];
 
@@ -84,10 +108,20 @@ export default function SuccessStoriesPage() {
                 className="bg-white rounded-lg shadow-sm overflow-hidden"
               >
                 <div className="p-6 md:p-10">
-                  <h2 className="font-heading text-2xl md:text-3xl font-bold text-dark-teal mb-2">
-                    {story.title}
-                  </h2>
-                  <p className="text-deep-teal font-medium mb-6">{story.client}</p>
+                  <div className="flex items-start gap-5 mb-6">
+                    <img
+                      src={story.image}
+                      alt={story.imageAlt}
+                      className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
+                      loading="lazy"
+                    />
+                    <div>
+                      <h2 className="font-heading text-2xl md:text-3xl font-bold text-dark-teal mb-2">
+                        {story.title}
+                      </h2>
+                      <p className="text-deep-teal font-medium">{story.client}</p>
+                    </div>
+                  </div>
 
                   <div className="space-y-6">
                     <div>
