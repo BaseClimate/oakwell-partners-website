@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "If you were pressured into an HVAC agreement at your front door, Ontario law may be on your side. Free consultation, no obligation.",
     images: [
       {
-        url: "https://oakwellpartners.ca/images/og-image.svg",
+        url: "https://oakwellpartners.ca/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Oakwell Partners — A fair resolution. A fresh start.",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Oakwell Partners",
     description: "Helping Ontario homeowners resolve unfair HVAC contracts",
-    images: ["https://oakwellpartners.ca/images/og-image.svg"],
+    images: ["https://oakwellpartners.ca/images/og-image.jpg"],
   },
   robots: {
     index: true,

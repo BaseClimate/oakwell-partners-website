@@ -23,12 +23,16 @@ export default function Hero({
 }: HeroProps) {
   if (variant === "home") {
     return (
-      <section className="relative bg-gradient-to-br from-dark-teal via-deep-teal to-dark-teal overflow-hidden">
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative overflow-hidden">
+        {/* Hero background image with gradient overlay */}
+        <div className="absolute inset-0">
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 25% 25%, rgba(199, 148, 74, 0.3) 0%, transparent 50%),
-                              radial-gradient(circle at 75% 75%, rgba(232, 244, 244, 0.2) 0%, transparent 50%)`,
+                              radial-gradient(circle at 75% 75%, rgba(27, 107, 109, 0.3) 0%, transparent 50%),
+                              linear-gradient(135deg, #0E4446 0%, #1B6B6D 50%, #0E4446 100%),
+                              url('/images/hero-bg.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }} />
         </div>
 
