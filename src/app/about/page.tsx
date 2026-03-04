@@ -81,6 +81,9 @@ export default function AboutPage() {
             <p className="text-deep-teal font-semibold text-xl">
               That is why Oakwell Partners exists. We looked at this gap between what the law provides and what homeowners can afford, and we built a solution.
             </p>
+            <p>
+              Oakwell Partners is the consumer-facing brand of Oakwell Partners Inc., a registered Ontario corporation (OCN: 1001519186).
+            </p>
           </div>
         </div>
       </section>
@@ -146,7 +149,7 @@ export default function AboutPage() {
             Important Distinctions
           </h2>
           <p className="text-charcoal text-lg leading-relaxed">
-            Oakwell Partners is not a law firm. We are a homeowner advocacy and case management service. We prepare cases, act as your agent, manage negotiations, and coordinate with licensed legal professionals when legal proceedings are required. This structure is what allows us to deliver results at a cost that makes sense for Ontario families.
+            While we are not a law firm, our services are structured to provide comprehensive administrative and advocacy support. We handle the complex case preparation and then partner exclusively with fully licensed, independent legal professionals who possess the proper authority to execute your contract cancellation.
           </p>
         </div>
       </section>

@@ -28,8 +28,8 @@ const testimonials = [
       "We were panicking about losing our buyer. Oakwell moved quickly and kept us calm throughout. We closed on time and even recovered some of our costs.",
     name: "Robert & Susan T.",
     location: "Peterborough, ON",
-    image: "/images/portrait-robert-susan.jpg",
-    imageAlt: "Portrait of Robert and Susan T.",
+    image: "/images/portrait-robert-susan-sold.jpg",
+    imageAlt: "Illustration of Robert and Susan T. in front of their home with a sold sign",
   },
   {
     quote:

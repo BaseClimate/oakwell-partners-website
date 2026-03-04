@@ -59,8 +59,8 @@ const stories = [
   },
   {
     title: "Robert and Susan: A Couple's Fresh Start",
-    image: "/images/portrait-robert-susan.jpg",
-    imageAlt: "Portrait of Robert and Susan T.",
+    image: "/images/portrait-robert-susan-sold.jpg",
+    imageAlt: "Illustration of Robert and Susan T. in front of their home with a sold sign",
     client: "Robert and Susan T., Peterborough, ON",
     situation:
       "The couple signed a contract for a new furnace after being told their current system was unsafe and inefficient. They were promised annual servicing and substantial energy savings. The total obligation was over $28,000. Neither the servicing nor the savings ever materialised. When they tried to sell their home two years later, the registration on their property nearly derailed the sale.",
